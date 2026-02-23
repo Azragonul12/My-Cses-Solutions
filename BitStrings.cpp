@@ -1,15 +1,4 @@
-#include<iostream>
-#include<vector>
-#include<algorithm>
-#include<math.h>
-#include<map>
-#include<string>
-#include<queue>
-#include<stack>
-#include<numeric>
-#include<utility>
-#include<set>
-#include<bitset>
+#include<bits/stdc++.h>
 using namespace std;
 #define mod 1000000007
 long long Fastpow(long long Num, long long Pow){
