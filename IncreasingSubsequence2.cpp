@@ -1,9 +1,22 @@
-#include "bits/stdc++.h"
+#include<iostream>
+#include<vector>
+#include<algorithm>
+#include<math.h>
+#include<map>
+#include<string>
+#include<queue>
+#include<stack>
+#include<numeric>
+#include <cstring>
+#include<utility>
+#include<set>
+#include<array>
+#include<bitset>
+#include<unordered_map>
 using namespace std;
 const int nMax = 2e5 + 7;
 const int mod = 1e9 + 7;
 long long fenwick[nMax];
-long long fenwick1[nMax];
 long long n;
 void upd(long long num , long long val){
 	for(long long i = num; n >= i; i += (i & -i)){
@@ -17,19 +30,6 @@ long long search(long long num){
 	}
 	return ans;
 }
-
-void upd1(long long num){
-	for(long long i = num; n >= i; i += (i & -i)){
-		fenwick1[i]++;
-	}
-}
-long long search1(long long num){
-	long long ans = 0;
-	for(long long i = num; 0 < i; i -= (i & -i)){
-		ans += fenwick1[i];
-	}
-	return ans;
-}
 int main(){
 	ios_base::sync_with_stdio(false);
 	cin.tie(NULL);
@@ -38,7 +38,7 @@ int main(){
 	cin >> n;
 	vector <long long> ar;
 	vector <long long> com;
-	unordered_map <long long> comp;
+	unordered_map <long long , long long> comp;
 	for(long long i = 0; n > i; i++){
 		cin >> x;
 		ar.push_back(x);
@@ -53,9 +53,9 @@ int main(){
 		}
 	}
 	for(long long i = 0; n > i; i++){
-		upd1(comp[ar[i]]);
-
-		upd(comp[ar[i]] , search(comp[ar[i]]) + search1(comp[ar[i]]));
+		long long p = search(comp[ar[i]] - 1) + 1;
+		//cout << p << "\n";
+		upd(comp[ar[i]] , p);
 	}
 	cout << search(n);
 
