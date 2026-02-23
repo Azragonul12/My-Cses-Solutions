@@ -1,15 +1,4 @@
-#include<iostream>
-#include<vector>
-#include<algorithm>
-#include<math.h>
-#include<map>
-#include<string>
-#include<queue>
-#include<stack>
-#include<numeric>
-#include<utility>
-#include<set>
-#include<bitset>
+#include<bits/stdc++.h>
 using namespace std;
 const long long MaxN= 1e6 + 7;
 long long dp[MaxN][2];
