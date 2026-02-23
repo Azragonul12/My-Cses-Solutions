@@ -54,10 +54,11 @@ int main(){
 	}
 	for(long long i = 0; n > i; i++){
 		long long p = search(comp[ar[i]] - 1) + 1;
+		p = p % mod;
 		//cout << p << "\n";
 		upd(comp[ar[i]] , p);
 	}
-	cout << search(n);
+	cout << search(n) % mod;
 
 
 }
