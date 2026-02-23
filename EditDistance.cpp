@@ -1,15 +1,4 @@
-#include<iostream>
-#include<vector>
-#include<algorithm>
-#include<math.h>
-#include<map>
-#include<string>
-#include<queue>
-#include<stack>
-#include<numeric>
-#include<utility>
-#include<set>
-#include<bitset>
+#include<bits/stdc++.h>
 using namespace std;
 const int maxStr = (1e3 * 5 + 5);
 long long dp[maxStr][maxStr]; 
