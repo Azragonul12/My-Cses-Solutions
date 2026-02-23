@@ -29,5 +29,4 @@ int main(){
 		cout<<(max(x,y)*max(x,y)) - dist<<"\n";
 	}
 }
-
-
+ 

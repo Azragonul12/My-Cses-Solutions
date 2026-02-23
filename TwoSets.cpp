@@ -46,9 +46,9 @@ int main(){
 				cout<<it<<" ";
 			}
 			cout<<"\n";
-
+ 
 		}
-
+ 
 	}
 	else{
 		cout<<"NO\n";

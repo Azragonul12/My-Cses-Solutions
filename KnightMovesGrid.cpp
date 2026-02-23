@@ -91,7 +91,7 @@ int main(){
 			que.push(pl);
 			grid[x - 1][y - 2] = grid[x][y] + 1;
 		}
-
+ 
 	}
 	for(long long i = 0; n > i; i++){
 		for(long long j = 0; n > j; j++){

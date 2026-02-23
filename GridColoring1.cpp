@@ -41,7 +41,7 @@ int main(){
 				else{
 					grid[i][j] = 'C';
 				}
-
+ 
 			}
 		}
 	}
@@ -51,6 +51,6 @@ int main(){
 		}
 		cout << "\n";
 	}
-
+ 
 	
 }

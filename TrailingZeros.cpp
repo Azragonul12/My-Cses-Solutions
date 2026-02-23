@@ -22,5 +22,4 @@ int main(){
 		n/=5;
 	}
 	cout<<count;
-
-}
+ }

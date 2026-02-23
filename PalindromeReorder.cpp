@@ -50,15 +50,15 @@ int main(){
 		for(int i = 0; Ans.size()>i ; i++){
 			cout<<Ans[i];
 		}
-
+ 
 		
 		if(str.length() % 2 == 1)	cout<<mid;
-
-
+ 
+ 
 		for(int i = Ans.size() - 1; 0 <= i ; i--){
 			cout<<Ans[i];
 		}
 	}
 	
-
+ 
 }

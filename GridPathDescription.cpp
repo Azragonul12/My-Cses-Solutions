@@ -1,17 +1,4 @@
-#include<iostream>
-#include<vector>
-#include<algorithm>
-#include<math.h>
-#include<map>
-#include<string>
-#include<queue>
-#include<stack>
-#include<numeric>
-#include <cstring>
-#include<utility>
-#include<set>
-#include<array>
-#include<bitset>
+#include<bits/stdc++.h>
 using namespace std;
 const int nMax = 8;
 long long hamle[nMax * nMax];
