@@ -33,7 +33,7 @@ int main(){
 		a[0] = x;
 		a[1] = i;
 		ar.push_back(a);
-		while(st.size() && ar[st.top()][0] < x){
+		while(st.size() && ar[st.top()][0] <= x){
 			st.pop();
 		}
 		if(st.size()){
@@ -46,7 +46,7 @@ int main(){
 	}
 	for(long long i = n - 1; 0 <= i; i--){
 		x = ar[i][0];
-		while(st.size() && ar[st.top()][0] < x){
+		while(st.size() && ar[st.top()][0] <= x){
 			st.pop();
 		}
 		if(st.size()){
